@@ -1,0 +1,100 @@
+<style>
+  .active {
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+  }
+</style>
+<div class="container my-9">
+  <ul class="mt-7 d-flex gap-6 border-bottom border-1 border-gray">
+    <li class="dashboard__item first active py-4" style="cursor: pointer;">نوشته ها</li>
+    <li class="dashboard__item second py-4" style="cursor: pointer;">کاربران</li>
+  </ul>
+
+  <section id="post-container" class="section-item">
+    <template id="post-template">
+      <div class="container border-bottom border-gray py-7">
+        <div class="flex-between gap-2">
+          <div class="w-75">
+            <div class="d-flex align-items-center">
+              <a id="setUserId" href="/user" class="d-flex align-items-center gap-2">
+                <span style="width: 4rem; height: 4rem" class="rounded-circle flex-center overflow-hidden">
+                  <img id="author-image" class="w-100 h-100 object-fit-cover" src=""
+                    onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+                </span>
+                <div id="author-name" class="fs-4 fw-bold">ناشناس</div>
+              </a>
+              <span id="post-publish" class="text-subtitle fs-5 me-3">5 دقیقه پیش</span>
+            </div>
+            <a id="post-link" href="/blog" class="chosen post-blog">
+              <h3 id="post-title" class="my-4 fw-bold">
+                اتفاقات اقتصادی کلیدی در دولت پزشکیان
+              </h3>
+              <section id="post-description" class="fs-5 text-subtitle ellipsis-2">
+                دولت رئیسی در ایجاد زیرساخت های اساسی نسبتا موفق عمل نمود.
+                اما در استفاده قاطعانه از این زیرساخت ها کاملا ضعیف و
+                بزدلانه عمل کرد......
+              </section>
+            </a>
+          </div>
+          <div class="w-25 d-flex justify-content-end">
+            <a href="/blog" style="width: 12rem; height: 12rem"
+              class="chosen post-blog rounded-2 bg-gray overflow-hidden">
+              <img id="post-image" class="w-100 h-100 object-fit-cover"
+                onerror="this.src='https://www.warnersstellian.com/Content/images/product_image_not_available.png'"
+                src="" />
+            </a>
+          </div>
+        </div>
+        <div class="flex-between py-4">
+          <div class="d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <a href="/tag" id="post-category"
+                class="chosen px-3 py-1 flex-center bg-gray fs-4 rounded-4 cat__contained">اقتصاد</a>
+            </div>
+            <div class="text-subtitle fs-5">
+              زمان خواندن :
+              <span id="post-readtime">2</span>
+              دقیقه
+            </div>
+          </div>
+          <div class="d-flex gap-7 text-subtitle">
+            <div id="post-like-elm" class="flex-center gap-2">
+              <i class="fa-regular fa-heart fs-1"></i>
+              <span id="post-like" class="fs-5">0</span>
+            </div>
+            <div class="flex-center gap-2">
+              <i class="fa-regular fa-message fs-1"></i>
+              <span id="post-comment" class="fs-5">0</span>
+            </div>
+            <div id="post-save-elm" class="flex-center gap-2">
+              <i class="fa-regular fa-bookmark fs-1"></i>
+              <span id="post-save" class="fs-5">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </section>
+  <section id="user-container" class="section-item d-none flex-wrap overflow-hidden">
+    <template id="user-template">
+      <div class="d-flex justify-content-between align-items-center mt-7 border-bottom border-1 p-4 w-100">
+        <div class="flex-center gap-2 d-flex flex-column">
+          <a id="userIdGiver" href="/user" style="cursor: pointer;"
+            class="d-flex justify-content-center align-items-center gap-3">
+            <img id="image-search" style="width: 5rem; height: 5rem" class="rounded-circle object-fit-cover" src=""
+              onerror="this.src='https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745'" />
+            <div id="name-search" class="fs-4 fw-bold">برنامه نویسی</div>
+          </a>
+          <p style="text-overflow: ellipsis;overflow: hidden;width: 13rem;white-space:nowrap;" id="bio-search"
+            class="fs-5 text-subtitle d-flex justify-content-center align-items-center">
+            آموزش زبان های برنامه نویسی
+          </p>
+        </div>
+        <div style="cursor: pointer;"
+          class="text-secondary border px-3 py-2 flex-center border-secondary rounded-2 fs-5">
+          دنبال کردن
+        </div>
+      </div>
+    </template>
+  </section>
+</div>
