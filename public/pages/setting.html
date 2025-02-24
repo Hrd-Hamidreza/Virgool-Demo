@@ -1,0 +1,187 @@
+<div class="container setting my-9">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="fw-bold fs-1">تنظیمات</h1>
+      <style>
+        .active {
+          border-top: 0.3rem solid transparent;
+          border-bottom: 0.3rem solid black;
+        }
+      </style>
+      <ul class="d-flex align-items-center gap-9 mt-8">
+        <li style="cursor: pointer;" class="setting__item dashboard__item fs-5 text-center pb-2 active">
+          درباره شما
+        </li>
+        <li style="cursor: pointer;" class="dashboard__item fs-5 text-center pb-2">
+          حساب کاربری
+        </li>
+        <li style="cursor: pointer;" class="dashboard__item fs-5 text-center pb-2">
+          اطلاعیه‌ها
+        </li>
+        <li style="cursor: pointer;" class="dashboard__item fs-5 text-center pb-2">
+          تنظیمات پیشرفته
+        </li>
+      </ul>
+      <section class="section-item flex-column">
+        <div class="flex-between mt-5 p-3 setting__prev" data-name="name">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>نام نمایشی</h3>
+            <p class="text-subtitle">
+              این نام در پروفایل شما نمایش داده می‌شود
+            </p>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="fw-bold fs-4 text-subtitle">
+              <span id="name">ناشناس</span>
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between mt-5 p-3 setting__prev" data-name="bio">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>درباره شما</h3>
+            <p id="bio" class="text-subtitle">
+              بیوگرافی شما در صفحه پروفایل نمایش داده می شود. حداکثر ۲۰۰ کاراکتر
+            </p>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="fw-bold fs-4 text-subtitle">
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between mt-5 p-3">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>عکس پروفایل</h3>
+            <p class="text-subtitle">
+              عکس شما در صفحه پروفایل و پست‌ها نمایش داده می‌شود.
+            </p>
+          </div>
+          <div class="d-flex gap-2">
+            <a style="width: 6rem; height: 6rem"
+              class="fw-bold flex-center fs-4 text-subtitle p-4 rounded-circle bg-gray">
+              <i class="fas fa-user"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-item flex-column d-none">
+        <div class="flex-between mt-5 p-3 setting__prev" data-name="username">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>نام کاربری</h3>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="fw-bold fs-4 text-subtitle">
+              <span id="userName">farhad_k77</span>
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between mt-5 p-3 setting__prev" data-name="email">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>ایمیل</h3>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="fw-bold fs-4 text-subtitle">
+              <span id="email">farhadkazemzadehgmail.com</span>
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between mt-5 p-3 setting__prev" data-name="phone">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>شماره همراه</h3>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="fw-bold fs-4 text-subtitle">
+              <span id="phone">09909999999</span>
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between mt-5 p-3 setting__prev" data-name="password">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>تغییر رمز عبور</h3>
+          </div>
+          <div class="d-flex gap-2">
+            <div class="fw-bold fs-4 text-subtitle">
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex-between mt-5 p-3">
+          <div class="d-flex flex-column gap-2 fs-4">
+            <h3>حذف حساب کاربری</h3>
+            <p class="text-subtitle">
+              با حذف حساب کاربری، تمام اطلاعات شما از سرورهای ویرگول حذف می‌شود
+            </p>
+          </div>
+          <div class="d-flex gap-2">
+            <div style="background-color: #ef4056;cursor: pointer" id="delete-account"
+              class="fw-bold fs-5 text-black border-1 rounded-2 border py-2 px-5 w-100 h-100">
+              <span>حذف حساب کاربری</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-item flex-column d-none">
+        این به عهده شما رفقا
+      </section>
+      <section class="section-item flex-column d-none">
+        این به عهده شما رفقا
+      </section>
+    </div>
+    <div id="delete-box" class="d-none setting__delete">
+      <div class="setting__submited p-5" style="width: 500px;background-color: #0a3f66d9;border-radius: 1rem;">
+        <div id="name-delete-user" class="fw-bold border-bottom border-3 border-black py-4 text-black">
+          حذف اکانت کاربری
+        </div>
+        <div class="py-4">
+          <p class="fs-5">برای حذف اکانت کاربری عبارت <strong style="color: #ef4056;">Delete</strong> را وارد کنید.</p>
+          <input style="background-color: transparent" id="input-delete-user"
+            class="w-100 border-0 border-bottom border-gray py-3" placeholder="اینجا بنویسید" />
+        </div>
+        <div class="d-flex justify-content-end py-3 gap-4">
+          <span style="cursor: pointer;"
+            class="delete-setting px-4 py-2 border border-danger rounded-2 fs-5 text-white">منصرف
+            شدم</span>
+          <span style="cursor: pointer; background-color: #ef4056;" id="submit-delete"
+            class="px-4 py-2 fs-5 text-white rounded-2">حذف
+            اکانت کاربری
+          </span>
+        </div>
+      </div>
+    </div>
+    <style>
+      #show-setting {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(8px);
+        background-color: rgba(247, 245, 245, 0.4);
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+    <div id="show-setting" class="d-none setting__show">
+      <div style="width: 500px;background-color: #0a3f66d9;border-radius: 1rem;" class="setting__submited p-5">
+        <div id="name-seting-user" class="fw-bold border-bottom border-3 border-black py-4 text-black">
+          نام نمایشی
+        </div>
+        <div class="py-4">
+          <input style="background-color: transparent;" id="input-seting-user"
+            class="w-100 border-0 border-bottom border-gray py-3 text-white" />
+        </div>
+        <div class="d-flex justify-content-end py-3 gap-4">
+          <span style="cursor: pointer;"
+            class="close-setting px-4 py-2 border border-danger rounded-2 fs-5 text-white">منصرف
+            شدم</span>
+          <span style="cursor: pointer;" id="submit-setting"
+            class="px-4 py-2 bg-secondary fs-5 text-white rounded-2">ذخیره</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
