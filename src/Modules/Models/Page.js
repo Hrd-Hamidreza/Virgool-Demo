@@ -38,8 +38,6 @@ export class Page {
         if (result) {
           container.innerHTML = result;
           this.afterRendering();
-        } else {
-          this.catch();
         }
         Loading.hideLoading();
       })
